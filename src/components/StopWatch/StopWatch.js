@@ -9,7 +9,7 @@ import { displayTime } from "./util";
 
 export default function StopWatch(){
   const [time, setTime] = useState(0);
-  const [isRunning, setIsRunning] = useState();
+  const [isRunning, setIsRunning] = useState(false);
   const [results, setResults] = useState();
   const timer = useRef(null);
 
@@ -36,7 +36,6 @@ export default function StopWatch(){
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
       <View style={styles.display}>
         <Text style={styles.displayText}>{displayTime(new Date(time))}</Text>
       </View>

@@ -13,17 +13,38 @@ const Clock = () => {
   }, []);
 
   return (
-    <SafeAreaView>
+    <View style={styles.container}>
+      <Text style={styles.heading}>
+        World clock
+      </Text>
+      <View style = {styles.line}/>
       <Text>
         Clock is running
-        {clockState}
+        
       </Text>
-    </SafeAreaView>
+      <Text>
+      {clockState}
+      </Text>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  constainer: {},
+  container: {
+    padding:'2%',
+    backgroundColor:'black',
+    height:'100%',
+  },
+  line:{
+    height:.5,
+    width:'100%',
+    backgroundColor:'grey'
+  },
+  heading:{
+    fontSize:50,
+    color:'white',
+    fontWeight:'700'
+  }
 });
 
 export default Clock;

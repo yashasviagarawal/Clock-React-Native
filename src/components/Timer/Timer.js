@@ -1,8 +1,14 @@
 import React from 'react'
+import {View, Text} from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 const Timer = () => {
   return (
-    <div>Timer</div>
+    <SafeAreaView>
+      <Text>
+        Timer is running
+      </Text>
+    </SafeAreaView>
   )
 }
 

@@ -12,7 +12,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen name="Landing" component={HomeScreen} options={{headerShown: false}}/>
       </Stack.Navigator>
-        <StatusBar style="auto" />
+        <StatusBar style="light" />
     </NavigationContainer>
   );
 }
