@@ -12,7 +12,7 @@ function Control({ isRunning, handleLeftBtnPress, handleRightBtnPress }) {
           },
         ]}
         onPress={() => {
-        //   handleLeftBtnPress();
+          handleLeftBtnPress();
           console.log("Left button pressed");
         }}
       >
@@ -31,7 +31,7 @@ function Control({ isRunning, handleLeftBtnPress, handleRightBtnPress }) {
           },
         ]}
         onPress={() => {
-        //   handleRightBtnPress();
+          handleRightBtnPress();
           console.log("Right button pressed");
         }}
       >
